@@ -1780,7 +1780,7 @@
     			this.track_info.distance = this._distance || 0;
     			this.track_info.elevation_max = this._maxElevation || 0;
     			this.track_info.elevation_min = this._minElevation || 0;
-    			d3.select(this.summaryDiv).html('<span class="totlen"><span class="summarylabel">' + L._("Distancia: ") + '</span><span class="summaryvalue">' + this.track_info.distance.toFixed(2) + ' ' + this._xLabel + '</span></span> <br/> <span class="maxele"><span class="summarylabel">' + L._("Elevación Máx.: ") + '</span><span class="summaryvalue">' + this.track_info.elevation_max.toFixed(2) + ' ' + this._yLabel + '</span></span> - <span class="minele"><span class="summarylabel">' + L._("Elevation Mín.: ") + '</span><span class="summaryvalue">' + this.track_info.elevation_min.toFixed(2) + ' ' + this._yLabel + '</span></span>');
+    			d3.select(this.summaryDiv).html('<span class="totlen"><span class="summarylabel">' + L._("Distancia: ") + '</span><span class="summaryvalue">' + this.track_info.distance.toFixed(2) + ' ' + this._xLabel + '</span></span> <br/> <span class="maxele"><span class="summarylabel">' + L._("Elevación Máx.: ") + '</span><span class="summaryvalue">' + this.track_info.elevation_max.toFixed(2) + ' ' + this._yLabel + '</span></span><br><span class="minele"><span class="summarylabel">' + L._("Elevation Mín.: ") + '</span><span class="summaryvalue">' + this.track_info.elevation_min.toFixed(2) + ' ' + this._yLabel + '</span></span>');
     		}
     		if (this.options.downloadLink && this._downloadURL) { // TODO: generate dynamically file content instead of using static file urls.
     			let span = document.createElement('span');

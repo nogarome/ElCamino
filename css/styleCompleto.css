@@ -10,44 +10,33 @@ html, body{
   
    body{    
       display: flex;
-      flex-direction: column;
-      dalign-items: flex-start;
-      align-items: center;
-      djustify-content: space-between;
+      flex-direction: column;      
+      align-items: center;      
       height: 100%;
-      overflow: hidden;
-           
-      /* background: url(../img/zzz.png), linear-gradient(rgba(239, 247, 254, 0.3), rgba(239, 247, 254, 0.3)),
-      url(../img/Mapa.jpg);
-      background-position: center;
-      background-repeat: no-repeat; 
-      background-size: cover; */      
-      
+      overflow: hidden;      
    }
 
    header{       
-    display: flex;    
-    bjustify-content: space-between;   
+    display: flex;        
     text-align: center;
     background: linear-gradient(rgba(239, 247, 254, 0.6), rgba(239, 247, 254, 0.6)),
     url(../img/Mapa.jpg);
-    height: 80px;     
+    height: 60px;     
    }
 
    .logo1, .logo2{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
    }
 
    .titulo1, .titulo2, hr{
-    font-size: 1.5rem;
-    dmargin: 0;
-    
+    font-size: 1rem;    
    }
 
    .titulo1{
     margin-top: 5px;
     margin-bottom: 0px;
+    font-size: 1.2rem;
    }
 
    .titulo2{
@@ -55,9 +44,14 @@ html, body{
     margin-bottom: 0px;
    }
 
+   .contenedor{
+      height: 100vh;
+      width: 100%;
+   }
+
    .inp{
       position: absolute;
-      top: 70em;
+      bottom: 0em;
       left: -12px;
       width: 12em;
       height: 5em;
@@ -70,16 +64,18 @@ html, body{
       background-size: cover;
    }
 
+   .summaryvalue, .elevation-summary{
+      color: aliceblue;
+   }
+
    #map{
     
     position: relative;
     width: 100vw;
-    height:calc(100vh - 180px);
+    height:100%;
    }
 
-   .controlfotos{
-      background: linear-gradient(rgba(239, 247, 254, 0.6), rgba(239, 247, 254, 0.6)),
-      url(../img/Mapa.jpg);
+   .controlfotos{      
     width: 100vw;
     height: 100px;
    }

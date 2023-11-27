@@ -27,8 +27,8 @@
 
 .leaflet-control.elevation .axis text{
     text-anchor:end;
-    /* fill:#000; */
-    font-weight:normal
+    fill:aliceblue;
+    font-weight:normal;
 }
 
 .leaflet-control.elevation .area{

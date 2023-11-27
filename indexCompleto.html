@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nuestro Camino</title>
     <link rel="stylesheet" href="css/leaflet.css" />
 		<script src="js/leaflet-src.js"></script>
@@ -47,7 +47,7 @@
         </div>
         <img class="logo2" src="img/logo2.png" alt=""/>
     </header>
-    <section>
+    <section class="contenedor">
         <!-- <div class="menu">        
             <input onclick="location.href='index3.html'" type="button" value="Camino completo" style="font-size: 2em;">
             <input onclick="location.href='index2.html'"    type="button" value="Por tramos" style="font-size:     2em;">
@@ -56,12 +56,10 @@
         
         <input class="inp" onclick="location.href='index.html'" type="button" value="">
               
-        <div id="map">
-            
-        </div>        
+        <div id="map"></div>
+        <div class="controlfotos" id="coordinatedImagePreviewControlContainer"></div>       
     </section>
-    <div class="controlfotos"          id="coordinatedImagePreviewControlContainer">        
-    </div>
+    
     <script src="js/mapaCompleto.js"></script>
     <script src="js/lightbox.js"></script>
 </body>

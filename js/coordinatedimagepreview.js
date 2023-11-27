@@ -7,8 +7,8 @@
 
     var options = {
         imageServiceAddress: "http://yourImageSearchAddress",
-        openButtonTitle: "Ver Fotografias",
-        closeButtonTitle: "Ocultar Fotografias",
+        /* openButtonTitle: "Ver Fotografias",
+        closeButtonTitle: "Ocultar Fotografias", */
         limit: 10,
         isOpen: false
     };
@@ -52,7 +52,7 @@
 
         var element = item;
         element.addClass("coordinatedImagePreviewControlContainer");
-        element.append('<input id="coordinatedImagePreviewControlOpenButton" class="coordinatedImagePreviewControlButton" type="image" src="" alt="Submit" title="' + options.openButtonTitle + '">');
+        element.append('<input id="coordinatedImagePreviewControlOpenButton" class="coordinatedImagePreviewControlButton" type="image" src="" alt="" title="' + options.openButtonTitle + '">');
 
         var parent = $("#map").parent();
         parent.append('<div id="coordinatedImagePreviewControlMainDiv" class="coordinatedImagePreviewControlMainDiv content horizontal-images"><ul id="coordinatedImagePreviewControlListUl" class="coordinatedImagePreviewControlUl"></ul></div>');
@@ -62,18 +62,18 @@
         $("#coordinatedImagePreviewControlOpenButton").click(function () {
             $("#coordinatedImagePreviewControlMainDiv")[0].style.visibility = "visible";
             map.on('moveend', CoordinatedImagePreviewControlMoveEndFunction);
-            $("#coordinatedImagePreviewControlMenuImage").addClass("coordinatedImagePreviewControlCloseMenuImage");
-            $("#coordinatedImagePreviewControlMenuImage").removeClass("coordinatedImagePreviewControlOpenMenuImage");
-            $("#coordinatedImagePreviewControlOpenButton")[0].style.visibility = "hidden";
-            queryPictures();
+            /* $("#coordinatedImagePreviewControlMenuImage").addClass("coordinatedImagePreviewControlCloseMenuImage"); */
+            /* $("#coordinatedImagePreviewControlMenuImage").removeClass("coordinatedImagePreviewControlOpenMenuImage"); */
+            /* $("#coordinatedImagePreviewControlOpenButton")[0].style.visibility = "hidden";
+            queryPictures(); */
         });
 
         $("#coordinatedImagePreviewControlCloseButton").click(function () {
             $("#coordinatedImagePreviewControlMainDiv")[0].style.visibility = "hidden";
             map.off('moveend', CoordinatedImagePreviewControlMoveEndFunction);
-            $("#coordinatedImagePreviewControlMenuImage").removeClass("coordinatedImagePreviewControlCloseMenuImage");
-            $("#coordinatedImagePreviewControlMenuImage").addClass("coordinatedImagePreviewControlOpenMenuImage");
-            $("#coordinatedImagePreviewControlOpenButton")[0].style.visibility = "visible";
+            /* $("#coordinatedImagePreviewControlMenuImage").removeClass("coordinatedImagePreviewControlCloseMenuImage"); */
+            /* $("#coordinatedImagePreviewControlMenuImage").addClass("coordinatedImagePreviewControlOpenMenuImage"); */
+            /* $("#coordinatedImagePreviewControlOpenButton")[0].style.visibility = "visible"; */
         });
 
         if (options.isOpen) {

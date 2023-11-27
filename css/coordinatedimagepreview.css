@@ -3,16 +3,16 @@
  Author     : yeozkaya@gmail.com
 */
 
-/* .coordinatedImagePreviewControlContainer {
+.coordinatedImagePreviewControlContainer {
     position: fixed;
-    bottom:15px;
+    bottom:0px;
     right:5px;
     z-index: 400;
     max-width: 500px;
     width: 50px;
     height: 42px;
     background:transparent;
-} */
+}
 
 /* .coordinatedImagePreviewControlMenuLink{
     background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
@@ -64,30 +64,25 @@
     height: 87.66px;
     background-color:transparent;
     bottom: 0px;
-    border-style: solid;
-    border-color: #566b13;
-    border-width: 0px 0px 0px 0px;
-
-    /* -moz-box-shadow: 2px 2px 2px -2px gray;
-    -webkit-box-shadow: 2px 2px 2px -2px gray; */
-    box-shadow: 2px 2px 2px -2px gray;
+    
 }
+
+
 
 .coordinatedImagePreviewControlUl {
     position: relative;
-    margin-top: 10px;
-    margin-bottom: 0px;
+    margin-block-start: 1cqmax;
+    padding-inline-start: 0px;
+    bottom: 18px;
+    
     /* overflow-x: scroll; */
     overflow-y: hidden;
     white-space: nowrap;
-    padding-left: 0px;
-    bottom: 0px;
     
 }
 
 .coordinatedImagePreviewControlLi {
     display: inline;
-    margin-right: 2px;
-    
+    margin-right: 0px;    
 }
 
